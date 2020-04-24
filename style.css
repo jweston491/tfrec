@@ -1,11 +1,11 @@
 /*
- Theme Name:     CAHNRS WSUWP Ignite | WSUWP Spine Child Theme
+ Theme Name:     Tree Fruit Research and Extension | WSUWP Spine Child Theme
  Theme URI:      https://web.wsu.edu
- Description:    CAHNRS child theme for WSU's Spine Parent Theme
- Author:         CAHNRS Communications
- Author URI:     https://cahnrs.wsu.edu/communications
+ Description:    TFREC child theme for WSU's Spine Parent Theme - Forked from <a href="https://github.com/washingtonstateuniversity/CAHNRSWSUWP-Theme-Ignite">https://github.com/washingtonstateuniversity/CAHNRSWSUWP-Theme-Ignite</a>
+ Author:         Jake Weston
+ Author URI:     https://github.com/jweston491/tfrec
  Template:       spine
- Version:        2.2.4
+ Version:        2.2.4+0.1
 */
 
 /*---------------------------------------------
@@ -392,7 +392,7 @@ figure {
 }
 
 #site-banner.static-image-wide-banner {
-	height: 25vw;
+	height: 22vw;
 }
 
 #site-banner .banner-image-wrap:before {
@@ -426,7 +426,7 @@ figure {
 }
 
 #site-banner.static-image-wide-banner .banner-image-wrap {
-	height: 25vw;
+	height: 22vw;
 	left: 0;
 	right: 0;
 	position: absolute;
@@ -482,6 +482,28 @@ figure {
 #site-banner.static-image-wide-banner.banner-full,
 #site-banner.static-image-wide-banner.banner-full .banner-image-wrap {
 	height: 100vh;
+}
+
+#site-banner .site-banner-title {
+	position: relative;
+	height: 22vw;
+	
+}
+
+#site-banner .site-banner-title h1 {
+	position: absolute;
+    bottom: 0;
+    color: white;
+    padding-bottom: 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+	#site-banner .site-banner-title h1 {
+		font-size:30px;
+	}
 }
 
 /* Content wide-static-slide ----- */
@@ -1649,6 +1671,9 @@ figure {
 	letter-spacing: 1px;
 }
 
+#college-global-nav .college-name-logo a {
+	padding: 0 1rem;
+}
 #college-global-nav .college-name-logo a,
 #college-global-actions a {
 	color: inherit;
@@ -1661,14 +1686,16 @@ figure {
 }
 
 #college-global-nav .college-name-logo a:after {
-	content: '\f107';
+	/* content: '\f107'; */
 	font-family: fontAwesome;
 	margin-left: 4px;
 	font-size: 16px;
 	display: none;
 }
 
-#college-global-actions a:before {
+#college-global-actions a:before,
+#college-global-nav .college-name-logo a:not(:first-child):before
+ {
 	content: '';
 	display: block;
 	position: absolute;
@@ -1678,6 +1705,13 @@ figure {
 	background-color: #ccc;
 	width: 1px;
 }
+
+@media screen and (max-width:800px){
+	#college-global-nav .college-name-logo a:not(:first-child):before {
+		display: none;
+	}
+}
+
 
 #college-global-actions a:first-child:before {
 	display: none;

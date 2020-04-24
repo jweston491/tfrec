@@ -15,4 +15,9 @@ $show_title = get_post_meta( $post_id, '_show_title_single_ignite', true );
 		<input style="display:none" type="checkbox" name="_remove_page_banner" value="0" checked="checked" />
 		<input type="checkbox" name="_remove_page_banner" value="1" <?php checked( 1, $settings['_remove_page_banner'] ); ?> />
 	</div>
+	<div class="ignite-field select-field">
+		<label>Show Title in Banner</label>
+		<input style="display:none" type="checkbox" name="_show_title_in_banner" value="0" checked="checked" />
+		<input type="checkbox" name="_show_title_in_banner" value="1" <?php checked( 1, $settings['_show_title_in_banner'] ); ?> />
+	</div>
 </div>

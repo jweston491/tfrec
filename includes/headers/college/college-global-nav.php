@@ -3,8 +3,8 @@
 		<ul>
 			<li class="college-name-logo">
 				<a href="//cahnrs.wsu.edu">
-					C<span>ollege of </span>A<span>gricultural, </span>H<span>uman, and </span>N<span>atural </span>R<span>esource </span>S<span>ciences</span>
-				</a>
+					CAHNRS
+				</a><a href="<?php echo esc_url( get_site_url() ) ?>"> <strong><?php echo esc_html( get_bloginfo( 'name' ) ) ?></strong></a>
 			</li>
 		</ul>
 	</nav><nav id="college-global-actions">

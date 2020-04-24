@@ -41,6 +41,7 @@ class Post_Editor_CAHNRS_Ignite {
 		$setting_keys = array(
 			'_show_title_single_ignite' => '',
 			'_remove_page_banner'       => 0,
+			'_show_title_in_banner'     => 0,
 
 		);
 
@@ -94,6 +95,8 @@ class Post_Editor_CAHNRS_Ignite {
 		$fields = array(
 			'_show_title_single_ignite' => 'text',
 			'_remove_page_banner'       => 'text',
+			'_show_title_in_banner'     => 'text',
+			
 		);
 
 		foreach ( $fields as $key => $type ) {
